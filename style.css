@@ -58,7 +58,8 @@ main{
 }
 
 .buttons {
-    background-color: rgb(255, 255, 241);
+    color: #0b1420;
+    background-color: rgb(248, 249, 215);;
     height: 36px;
     width: 36px;
     border: 2px solid black;
