@@ -6,7 +6,6 @@
 header {
     display: flex;
     text-align: center;
-    background-color: #B3C8CF;
     padding: 3px;
     height: 7.5%;
 }
@@ -31,7 +30,6 @@ header p {
 
 main{
     height: 90%;
-    background-color: #F1EEDC;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -56,17 +54,20 @@ main{
     justify-content: center;
     align-content: center;
     gap: 2.3px;
+    border-radius: 5px;
 }
 
 .buttons {
+    background-color: rgb(255, 255, 241);
     height: 36px;
     width: 36px;
     border: 2px solid black;
+    border-radius: 4px;
     font-size: 25px;
     text-align: center;
 }
 .buttons:disabled{
-    background-color: white;
+    background-color: rgb(248, 249, 215);
     border: 2px solid black;
 }
 

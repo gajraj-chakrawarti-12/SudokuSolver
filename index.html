@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <header>
+    <header style="background-color: rgb(110, 133, 183); color: #000000;transition: all 1s;">
         <div id="div1">
             <p>Sudoku Game Solver</p>
         </div>
-        <div id="div2">
-            <label class="ui-switch">
+        <div id="div2" >
+            <label class="ui-switch" onchange="themeSwitch()">
                 <input type="checkbox">
                 <div class="slider">
                     <div class="circle"></div>
@@ -24,11 +24,11 @@
             </label>
         </div>
     </header>
-    <main>
-        <div id="playNow" style="display: block;">
+    <main style="background-color: rgb(196, 215, 224);transition: all 1s;color: #000000;">
+        <div id="playNow" style="display: block;" onmouseover="spanHower()" onmouseout="spanHowerout()">
             <button id="playButton">
                 <span
-                    style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SOLVE</span>
+                    style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #000000;">SOLVE</span>
             </button>
         </div>
         <div id="play" style="display: none;">
@@ -118,9 +118,9 @@
                 </div>
                 <div>
                     <button id="solve"
-                        style="width: 100px; height: 50px; cursor:pointer;background-color: #BED7DC; display: block;">SOLVE</button>
+                        style="width: 100px; height: 50px; cursor:pointer;background-color: #BED7DC; display: flex; font-weight: bold;flex-wrap: wrap;justify-content: center;align-content: center;">SOLVE</button>
                     <button id="newGame"
-                        style="width: 100px; height: 50px;cursor:pointer; background-color: #BED7DC; display: none;">NEW
+                        style="width: 100px; height: 50px;cursor:pointer; background-color: #BED7DC; display: none;font-weight: bold;flex-wrap: wrap;justify-content: center;align-content: center;">NEW
                         GAME</button>
                 </div>
             </div>
@@ -131,5 +131,14 @@
     </footer>
 </body>
 <script src="script.js"> </script>
-
+<script>
+    function spanHower() {
+        if ("rgb(110, 133, 183)" === document.querySelector("header").style.backgroundColor){
+        document.querySelector("span").style.color = "rgb(0, 0, 0)" === document.querySelector("span").style.color ? "rgb(221, 230, 237)" : "rgb(0, 0, 0)";}
+    }
+    function spanHowerout(params) {
+        if ("rgb(110, 133, 183)" === document.querySelector("header").style.backgroundColor){
+        document.querySelector("span").style.color = "rgb(0, 0, 0)" === document.querySelector("span").style.color ? "rgb(221, 230, 237)" : "rgb(0, 0, 0)";}
+    }
+</script>
 </html>

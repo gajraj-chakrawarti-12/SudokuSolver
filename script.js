@@ -11,6 +11,13 @@ playNow.onclick = () => {
     document.querySelector("#play").style.display = "block";
 }
 
+function themeSwitch(){
+    document.querySelector("header").style.backgroundColor = "rgb(110, 133, 183)" === document.querySelector("header").style.backgroundColor ? "rgb(39, 55, 77)" : "rgb(110, 133, 183)";
+    document.querySelector("main").style.backgroundColor = "rgb(196, 215, 224)" === document.querySelector("main").style.backgroundColor ? "rgb(82, 109, 130)" : "rgb(196, 215, 224)";
+    document.querySelector("header").style.color = "rgb(0, 0, 0)" === document.querySelector("header").style.color ? "rgb(221, 230, 237)" : "rgb(0, 0, 0)";
+    document.querySelector("span").style.color = "rgb(0, 0, 0)" === document.querySelector("span").style.color ? "rgb(221, 230, 237)" : "rgb(0, 0, 0)";
+}
+
 function isSafe(index, value) {
     for (let i = 0; i < 9; i++) {
         if (buttons[i * 9 + (index % 9)].value === value) {
@@ -94,11 +101,11 @@ buttons.forEach(button => {
 solve.onclick = () => {
     solver(0);
     solve.style.display = "none";
-    newGame.style.display = "block";
+    newGame.style.display = "flex";
 }
 
 newGame.onclick = () => {
     clearAll();
-    solve.style.display = "block";
+    solve.style.display = "flex";
     newGame.style.display = "none";
 }
