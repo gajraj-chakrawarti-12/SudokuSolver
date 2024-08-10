@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="playNow.css">
+    <link rel="stylesheet" href="themeSwitch.css">
+    <title>Sudoku Game Solver</title>
+</head>
+
+<body>
+    <header>
+        <div id="div1">
+            <p>Sudoku Game Solver</p>
+        </div>
+        <div id="div2">
+            <label class="ui-switch">
+                <input type="checkbox">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div id="playNow" style="display: block;">
+            <button id="playButton">
+                <span
+                    style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SOLVE</span>
+            </button>
+        </div>
+        <div id="play" style="display: none;">
+            <div class="contantContainer">
+                <div class="buttonContainer">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                    <input type="text" name="SudokuGame" class="buttons" autocomplete="off">
+                </div>
+                <div>
+                    <button id="solve"
+                        style="width: 100px; height: 50px; cursor:pointer;background-color: #BED7DC; display: block;">SOLVE</button>
+                    <button id="newGame"
+                        style="width: 100px; height: 50px;cursor:pointer; background-color: #BED7DC; display: none;">NEW
+                        GAME</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created by : <i>@gajraj_chakrawarti_12</i></p>
+    </footer>
+</body>
+<script src="script.js"> </script>
+
+</html>

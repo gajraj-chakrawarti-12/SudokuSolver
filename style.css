@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    background-color: #B3C8CF;
+    padding: 3px;
+    height: 7.5%;
+}
+header #div1{
+    width: 90%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+header #div2{
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+header p {
+    font-size: 180%;
+}
+
+main{
+    height: 90%;
+    background-color: #F1EEDC;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contantContainer{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonContainer{
+    height: 380px;
+    width: 380px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2.3px;
+}
+
+.buttons {
+    height: 36px;
+    width: 36px;
+    border: 2px solid black;
+    font-size: 25px;
+    text-align: center;
+}
+.buttons:disabled{
+    background-color: white;
+    border: 2px solid black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 30px;
+    text-align: center;
+    background-color: #0b1420;
+    color: #DDE6ED;
+}
+
+footer p {
+    padding: 5px;
+}
